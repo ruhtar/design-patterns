@@ -6,7 +6,8 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // SINGLETON: 
+            //Singleton.ValidateSingleton();
         }
     }
 }
