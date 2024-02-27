@@ -12,12 +12,12 @@ namespace DesignPatterns.Mediator
         }
         public override void Receive(string message)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{Name} : received <= {message} ");
         }
 
         public override void Send(string message)
         {
-            throw new NotImplementedException();
+            Mediator.SendMessage(message, this);        
         }
     }
 }
