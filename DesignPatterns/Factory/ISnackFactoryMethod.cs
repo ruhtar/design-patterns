@@ -2,6 +2,6 @@
 {
     internal interface ISnackFactoryMethod
     {
-        public abstract Snack CreateSnack(int id);
+        public Snack CreateSnack(int id);
     }
 }

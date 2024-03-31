@@ -18,8 +18,6 @@ namespace DesignPatterns.Factory
 
             Console.WriteLine($"Your {snack.Name} is done." + "\n");
             Console.WriteLine("-----------------------------------------------" + "\n");
-
-
         }
     }
 }

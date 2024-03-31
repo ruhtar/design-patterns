@@ -1,5 +1,4 @@
-﻿using DesignPatterns.Factory;
-using System;
+﻿using System;
 
 namespace DesignPatterns
 {
@@ -16,8 +15,8 @@ namespace DesignPatterns
             #endregion
 
             #region Factory Method
-            FactoryMethodTest.Validate(id: 1);
-            FactoryMethodTest.Validate(id: 2);
+            //FactoryMethodTest.Validate(id: 1);
+            //FactoryMethodTest.Validate(id: 2);
             #endregion
 
             Console.ReadLine();

@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns.Factory
+﻿using System;
+
+namespace DesignPatterns.Factory
 {
     internal class SnackFactory : ISnackFactoryMethod
     {
@@ -11,7 +13,7 @@
                 case 2:
                     return new Hamburguer();
                 default:
-                    return null;
+                    throw new ArgumentException("Snack not found.");
 
             }
         }

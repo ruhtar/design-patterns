@@ -3,7 +3,13 @@
     internal class Hamburguer : Snack
     {
         private string _name;
-        public override string Name => _name;
+        public override string Name
+        {
+            get
+            {
+                return _name;
+            }
+        }
         public Hamburguer()
         {
             _name = "Hamburguer";
