@@ -1,6 +1,4 @@
-using System;
-
-namespace DesignPatterns
+namespace DesignPatterns.Singleton
 {    // The Singleton class defines the `GetInstance` method that serves as an
     // alternative to constructor and lets clients access the same instance of
     // this class over and over.
@@ -31,21 +29,6 @@ namespace DesignPatterns
 
         // Finally, any singleton should define some business logic, which can
         // be executed on its instance.
-        public static void ValidateSingleton()
-        {
-            var s1 = GetInstance();
-            var s2 = GetInstance();
 
-            if (s1 == s2)
-            {
-                Console.WriteLine("Same instance. Singleton works!");
-                Console.ReadLine();
-            }
-            else
-            {
-                Console.WriteLine("Different instances. Singleton doesn't work :( ");
-                Console.ReadLine();
-            }
-        }
     }
 }

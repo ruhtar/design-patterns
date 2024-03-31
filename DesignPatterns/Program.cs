@@ -1,14 +1,26 @@
-﻿namespace DesignPatterns
+﻿using DesignPatterns.Factory;
+using System;
+
+namespace DesignPatterns
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // SINGLETON: 
-            //Singleton.ValidateSingleton();
+            #region Singleton
+            //SingletonTest.ValidateSingleton();
+            #endregion
 
-            // MEDIATOR: 
+            #region Mediator
             //MediatorTest.Validate();
+            #endregion
+
+            #region Factory Method
+            FactoryMethodTest.Validate(id: 1);
+            FactoryMethodTest.Validate(id: 2);
+            #endregion
+
+            Console.ReadLine();
         }
     }
 }
