@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.Mediator
 {
@@ -17,7 +14,7 @@ namespace DesignPatterns.Mediator
 
         public override void Send(string message)
         {
-            Mediator.SendMessage(message, this);        
+            Mediator.SendMessage(message, this);
         }
     }
 }

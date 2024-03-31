@@ -1,7 +1,4 @@
-﻿using System;
-using DesignPatterns.Mediator;
-
-namespace DesignPatterns
+﻿namespace DesignPatterns
 {
     class Program
     {
@@ -11,7 +8,7 @@ namespace DesignPatterns
             //Singleton.ValidateSingleton();
 
             // MEDIATOR: 
-            MediatorTest.Validate();
+            //MediatorTest.Validate();
         }
     }
 }

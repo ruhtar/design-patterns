@@ -13,7 +13,7 @@ namespace DesignPatterns
         // direct construction calls with the `new` operator.
         private Singleton() { }
         private static Singleton _instance;
-        
+
         // This is the static method that controls the access to the singleton
         // instance. On the first run, it creates a singleton object and places
         // it into the static field. On subsequent runs, it returns the client
@@ -28,21 +28,23 @@ namespace DesignPatterns
             }
             return _instance;
         }
-        
+
         // Finally, any singleton should define some business logic, which can
         // be executed on its instance.
         public static void ValidateSingleton()
         {
-            var s1 = Singleton.GetInstance();
-            var s2 = Singleton.GetInstance();
+            var s1 = GetInstance();
+            var s2 = GetInstance();
 
             if (s1 == s2)
             {
                 Console.WriteLine("Same instance. Singleton works!");
+                Console.ReadLine();
             }
             else
             {
                 Console.WriteLine("Different instances. Singleton doesn't work :( ");
+                Console.ReadLine();
             }
         }
     }

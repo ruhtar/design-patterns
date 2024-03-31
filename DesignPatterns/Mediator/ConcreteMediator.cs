@@ -1,7 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.Mediator
 {
@@ -18,7 +15,8 @@ namespace DesignPatterns.Mediator
             foreach (var u in users)
             {
                 //Message is not receive from who is sending it.
-                if(u != user){
+                if (u != user)
+                {
                     u.Receive(msg);
                 }
             }
