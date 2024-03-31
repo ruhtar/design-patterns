@@ -12,12 +12,10 @@ namespace DesignPatterns.Singleton
             if (s1 == s2)
             {
                 Console.WriteLine("Same instance. Singleton works!");
-                Console.ReadLine();
             }
             else
             {
                 Console.WriteLine("Different instances. Singleton doesn't work :( ");
-                Console.ReadLine();
             }
         }
     }
