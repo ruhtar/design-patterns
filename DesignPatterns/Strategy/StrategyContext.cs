@@ -19,8 +19,8 @@ internal class StrategyContext
 
     public double Calculate(double firstNumber, double secondNumber)
     {
-        if (this.calculatorStrategy == null)
-            throw new ArgumentNullException(nameof(calculatorStrategy));
+        if (calculatorStrategy == null)
+            throw new ArgumentNullException("You must set the Strategy implementation via constructor or SetStrategy method.");
 
         return calculatorStrategy.Operation(firstNumber, secondNumber);
     }
