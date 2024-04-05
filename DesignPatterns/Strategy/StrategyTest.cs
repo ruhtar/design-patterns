@@ -7,8 +7,11 @@ public class StrategyTest
     public static void Validate()
     {
         var context = new StrategyContext();
+
+        var context2 = new StrategyContext(new Sum());
+
         context.SetStrategy(new Sum());
-        var result1 = context.Calculate(6, 2);
+        var result1 = context2.Calculate(6, 2);
         Console.WriteLine($"Result for Sum strategy: {result1}" + "\n");
 
         context.SetStrategy(new Subtraction());

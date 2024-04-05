@@ -1,5 +1,4 @@
-﻿using DesignPatterns.Strategy;
-using System;
+﻿using System;
 
 namespace DesignPatterns;
 
@@ -21,9 +20,10 @@ class Program
         #endregion
 
         #region Strategy
-        StrategyTest.Validate();
+        //StrategyTest.Validate();
         #endregion
 
+        Console.WriteLine("Press Enter to finish..." + "\n");
         Console.ReadLine();
     }
 }
