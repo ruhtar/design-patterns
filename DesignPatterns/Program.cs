@@ -1,25 +1,29 @@
-﻿using System;
+﻿using DesignPatterns.Strategy;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            #region Singleton
-            //SingletonTest.ValidateSingleton();
-            #endregion
+        #region Singleton
+        //SingletonTest.ValidateSingleton();
+        #endregion
 
-            #region Mediator
-            //MediatorTest.Validate();
-            #endregion
+        #region Mediator
+        //MediatorTest.Validate();
+        #endregion
 
-            #region Factory Method
-            //FactoryMethodTest.Validate(id: 1);
-            //FactoryMethodTest.Validate(id: 2);
-            #endregion
+        #region Factory Method
+        //FactoryMethodTest.Validate(id: 1);
+        //FactoryMethodTest.Validate(id: 2);
+        #endregion
 
-            Console.ReadLine();
-        }
+        #region Strategy
+        StrategyTest.Validate();
+        #endregion
+
+        Console.ReadLine();
     }
 }
